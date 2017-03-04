@@ -9,12 +9,12 @@ namespace ProgramaKomputer2016
     {
         static void Main(string[] args)
         {
-            //deklarasi variabel
+            //deklarasi variabel 1
             int suhuC; 
             int suhuK;
             string nama;
 
-            //Input Data
+            //Input Data 
             //suhuC = 100;
             Console.Write("Inputkan nama Anda : ");
             nama = Console.ReadLine();
