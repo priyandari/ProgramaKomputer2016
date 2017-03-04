@@ -9,7 +9,7 @@ namespace ProgramaKomputer2016
     {
         static void Main(string[] args)
         {
-            //deklarasi variabel 1
+            //deklarasi variabel 12
             int suhuC; 
             int suhuK;
             string nama;
