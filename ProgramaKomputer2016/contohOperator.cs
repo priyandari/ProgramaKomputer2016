@@ -20,6 +20,9 @@ namespace ProgramaKomputer2016
             return luas;
         }
 
-
+        public double NilaiSisa()
+        {
+            return tinggi % alas;
+        }
     }
 }

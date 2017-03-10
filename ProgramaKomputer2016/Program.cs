@@ -46,6 +46,8 @@ namespace ProgramaKomputer2016
             contohOperator CO = new contohOperator();
             Console.WriteLine("Luas Segitiga adalah {0}", CO.LuasSegitiga().ToString());
 
+            Console.WriteLine("Nilai sisa Tinggi dibagi alas adalah {0}", CO.NilaiSisa().ToString());
+
             Console.ReadKey();
 
 
