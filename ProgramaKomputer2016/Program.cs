@@ -43,10 +43,20 @@ namespace ProgramaKomputer2016
             //kotakbaru.setAtribut();
             //Console.WriteLine("Luas kotak adalah {0}", kotakbaru.Luas().ToString());
 
-            contohOperator CO = new contohOperator();
-            Console.WriteLine("Luas Segitiga adalah {0}", CO.LuasSegitiga().ToString());
+            //contohOperator CO = new contohOperator();
+            //Console.WriteLine("Luas Segitiga adalah {0}", CO.LuasSegitiga().ToString());
 
-            Console.WriteLine("Nilai sisa Tinggi dibagi alas adalah {0}", CO.NilaiSisa().ToString());
+            //Console.WriteLine("Nilai sisa Tinggi dibagi alas adalah {0}", CO.NilaiSisa().ToString());
+
+            #region Percabangan 170317
+            Percabangan genap = new Percabangan();
+            genap.inputData();
+            genap.checkBilangan();
+
+            Percabangan nilaiProkom = new Percabangan();
+            nilaiProkom.inputData();
+            nilaiProkom.nilaiAkhir();
+            #endregion
 
             Console.ReadKey();
 
