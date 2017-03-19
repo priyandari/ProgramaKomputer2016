@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ProgramaKomputer2016
 {
-    class contohOperator
+    class Operator
     {
         double alas, tinggi, luas;
         

@@ -9,60 +9,61 @@ namespace ProgramaKomputer2016
     {
         static void Main(string[] args)
         {
+            #region Struktur program, Tipe data, variabel
+                //Bagian Inisialisasi
+                int suhuC;
+                int suhuK;
+                string nama;
 
-            //deklarasi variabel 12
-            //int suhuC; 
-            //int suhuK;
-            //string nama;
+                //Bagian Input Data 
+                suhuC = 100;
+                Console.Write("Inputkan nama Anda : ");
+                nama = Console.ReadLine();
 
-            //Input Data 
-            //suhuC = 100;
-            //Console.Write("Inputkan nama Anda : ");
-            //nama = Console.ReadLine();
+                Console.Write("Inputkan suhu C : ");
+                suhuC = Convert.ToInt32(Console.ReadLine());
+            
+                //Bagian Proses
+                suhuK = 273 + suhuC;
 
-            //Console.Write("Inputkan suhu C : ");
-            //suhuC = Convert.ToInt32(Console.ReadLine());
-            //Proses
-            //suhuK = 273 + suhuC;
+                //Bagian Output
+                Console.Write("Suhu hasil konversi dalam Kelvin = ");
+                Console.WriteLine(suhuK);
 
-            //Output
-            //Console.Write("Suhu hasil konversi dalam Kelvin = ");
-            //Console.WriteLine(suhuK);
+                Console.Write("Suhu hasil konversi dalam Kelvin = {0}", suhuK);
 
-            //Console.Write("Suhu hasil konversi dalam Kelvin = {0}", suhuK);
-
-            //Console.Write("{0} Celcius = {1} Kelvin", suhuC, suhuK);
+                Console.Write("{0} Celcius = {1} Kelvin", suhuC, suhuK);
 
 
-            //Console.WriteLine("Suhu hasil konversi dalam Kelvin = " + suhuK);
+                Console.WriteLine("Suhu hasil konversi dalam Kelvin = " + suhuK);
 
-            //Console.WriteLine("Terima kasih {0} atas perhatiannya", nama);
-            //bagian untuk menghentikan program sampai ditekannya sebuah tombol
+                Console.WriteLine("Terima kasih {0} atas perhatiannya", nama);
 
-            //kotak kotakbaru = new kotak();
-            //kotakbaru.setAtribut();
-            //Console.WriteLine("Luas kotak adalah {0}", kotakbaru.Luas().ToString());
-
-            //contohOperator CO = new contohOperator();
-            //Console.WriteLine("Luas Segitiga adalah {0}", CO.LuasSegitiga().ToString());
-
-            //Console.WriteLine("Nilai sisa Tinggi dibagi alas adalah {0}", CO.NilaiSisa().ToString());
-
-            #region Percabangan 170317
-            Percabangan genap = new Percabangan();
-            genap.inputData();
-            genap.checkBilangan();
-
-            Percabangan nilaiProkom = new Percabangan();
-            nilaiProkom.inputData();
-            nilaiProkom.nilaiAkhir();
             #endregion
 
-            Console.ReadKey();
+            #region Operator dan mengenal sedikit OOP
+                //kotak kotakbaru = new kotak(); //deklarasi object
+                //kotakbaru.setAtribut();
+                //Console.WriteLine("Luas kotak adalah {0}", kotakbaru.Luas().ToString());
 
+                //Operator CO = new Operator();
+                //Console.WriteLine("Luas Segitiga adalah {0}", CO.LuasSegitiga().ToString());
 
+                //Console.WriteLine("Nilai sisa Tinggi dibagi alas adalah {0}", CO.NilaiSisa().ToString());
+            #endregion
 
+            #region Percabangan 170317
+                Percabangan genap = new Percabangan();
+                genap.inputData();
+                genap.checkBilangan();
 
+                Percabangan nilaiProkom = new Percabangan();
+                nilaiProkom.inputData();
+                nilaiProkom.nilaiAkhir();
+            #endregion
+            
+            //BAGIAN ini jangan dihilangkan
+            Console.ReadKey(); //untuk menunda program ditutup, sampai ditekannya sebuah tombol
         }
     }
 
@@ -74,7 +75,6 @@ namespace ProgramaKomputer2016
         {
             panjang = 10.9;
             lebar = 8.1;
-
         }
 
         public double Luas()
