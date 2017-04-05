@@ -60,6 +60,10 @@ namespace ProgramaKomputer2016
                 Percabangan nilaiProkom = new Percabangan();
                 nilaiProkom.inputData();
                 nilaiProkom.nilaiAkhir();
+
+                Percabangan pakaiSwitch = new Percabangan();
+                pakaiSwitch.contohSwith();    
+
             #endregion
             
             //BAGIAN ini jangan dihilangkan
