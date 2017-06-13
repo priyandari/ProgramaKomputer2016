@@ -109,9 +109,96 @@ namespace ProgramaKomputer2016
             //        break; 
             //    }
             //}
-            
+
             #endregion
 
+            #region Matriks
+            //Pengisian data matrik
+            //Console.WriteLine("Inputkan jumlah baris Matrik A :");
+            //int BarisA = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Inputkan jumlah kolom Matrik A :");
+            //int KolomA = Convert.ToInt32(Console.ReadLine());
+
+            //Console.WriteLine("Inputkan jumlah baris Matrik B :");
+            //int BarisB = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Inputkan jumlah kolom Matrik B :");
+            //int KolomB = Convert.ToInt32(Console.ReadLine());
+
+            //double[,] matrikA = new double[BarisA, KolomA];
+            //double[,] matrikB = new double[BarisB, KolomB];
+            //double[,] matrikC = new double[BarisA, KolomB];
+
+            double[,] matrikA = new double[2, 3];
+            double[,] matrikB = new double[3, 2];
+            double[,] matrikC = new double[2, 2];
+
+            for (int i = 0; i < 2; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    Console.Write("Inputkan data matrik A" + i + "," + j + " : ");
+                    matrikA[i, j] = Convert.ToDouble(Console.ReadLine());
+                }
+            }
+            
+            //Menampilkan data matrik
+            for (int i = 0; i < 2; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    Console.Write(matrikA[i, j] +"\t");
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine();
+
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 2; j++)
+                {
+                    Console.Write("Inputkan data matrik B" + i + "," + j + " : ");
+                    matrikB[i, j] = Convert.ToDouble(Console.ReadLine());
+                }
+            }
+
+            //Menampilkan data matrik
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 2; j++)
+                {
+                    Console.Write(matrikB[i, j] + "\t");
+                }
+                Console.WriteLine();
+            }
+
+            //PERKALIAN MATRIK
+
+            double data = 0;
+
+            for (int i = 0; i < 2; i++)
+            {
+                for (int l = 0; l < 2; l++)
+                {
+                    data = 0;
+                    for (int j = 0; j < 3; j++)
+                    {
+
+                       data = data + matrikA[i, j] * matrikB[j, l];
+                    }
+                    matrikC[i, l] = data;
+
+                }
+            }
+
+            for (int i = 0; i < 2; i++)
+            {
+                for (int j = 0; j < 2; j++)
+                {
+                    Console.Write(matrikC[i, j] + "\t");
+                }
+                Console.WriteLine();
+            }
+            #endregion
 
             Console.ReadKey();
         }
